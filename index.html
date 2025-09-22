@@ -1,48 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Vapi Chat Widget</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <style>
-        html, body {
-          margin: 0;
-          padding: 0;
-          width: 100%;
-          height: 100%;
-        }
-        body {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background: #000; /* optional */
-        }
-        #app {
-          width: 100%;
-          height: 100%;
-          max-width: 600px;  /* optional: cap width on desktop */
-        }
-        iframe, vapi-widget {
-          width: 100%;
-          height: 100%;
-        }
-      </style>
-    <title>Your Website</title>
 </head>
-
-<body style="background-color: #1f2937;">
-
-    <!-- Add Vapi Widget -->
-    <script src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js" async
-        type="text/javascript"></script>
-
-    
-    <vapi-widget public-key="c5db2659-caca-40ca-a706-4226a47f03a7"
-        assistant-id="3e0aeed6-ebb0-4623-97f9-b0d332795591" mode="chat" theme="dark" position="bottom-left"
-        main-label="Chat with AI" empty-chat-message="Hi, Victor" button-base-color="#154b84" base-color="#111827"></vapi-widget>
-
-
-    <vapi-widget public-key="c5db2659-caca-40ca-a706-4226a47f03a7"
-        assistant-id="3e0aeed6-ebb0-4623-97f9-b0d332795591" mode="voice" theme="dark" main-label="Talk with AI"
-        empty-voice-message="Hi, Victor" show-transcript="true" button-base-color="#154b84" base-color="#111827"></vapi-widget>
+<body style="background-color: #1f2937; margin: 0; padding: 0;">
+    <script src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js" async type="text/javascript"></script>
+    <vapi-widget public-key="c5db2659-caca-40ca-a706-4226a47f03a7" assistant-id="3e0aeed6-ebb0-4623-97f9-b0d332795591" mode="chat" theme="dark" position="bottom-left" main-label="Chat with AI" empty-chat-message="Hi, Victor" button-base-color="#154b84" base-color="#111827"></vapi-widget>
 </body>
-
 </html>
